@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+  font-family: Arial, sans-serif;
+  background: #f4f8e6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.calculator {
+  width: 300px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.display {
+  text-align: right;
+  margin-bottom: 20px;
+  padding: 10px;
+  background: #d7f6d7;
+  border-radius: 10px;
+}
+
+.display .result {
+  font-size: 2em;
+  font-weight: bold;
+  color: #333333;
+}
+
+.display .expression {
+  font-size: 1em;
+  color: #666666;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+button {
+  padding: 15px;
+  font-size: 1em;
+  font-weight: bold;
+  color: #333333;
+  background: #d7f6d7;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #b9eab9;
+}
+
+button:active {
+  background: #a1dfa1;
+}
+
+</style>
+<body>
+  <div class="calculator">
+    <div class="display">
+      <div class="result">600</div>
+      <div class="expression">400+200</div>
+    </div>
+    <div class="buttons">
+      <button>DEL</button>
+      <button>LOG</button>
+      <button>&infin;</button>
+      <button>&divide;</button>
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
+      <button>&times;</button>
+      <button>4</button>
+      <button>5</button>
+      <button>6</button>
+      <button>&minus;</button>
+      <button>7</button>
+      <button>8</button>
+      <button>9</button>
+      <button>&plus;</button>
+      <button>RESULT</button>
+      <button>0</button>
+      <button>.</button>
+    </div>
+  </div>
+</body>
+</html>
