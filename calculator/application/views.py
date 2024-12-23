@@ -1,6 +1,6 @@
 from django.shortcuts import render
 
-def calculator(request):
+def calculator(request):  # sourcery skip: assign-if-exp, switch
     c = ""
     if request.method == "POST":
         n1 = request.POST.get("num1")
