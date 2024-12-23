@@ -11,7 +11,6 @@ def calculator(request):
         if n1.isdigit() and n2.isdigit():
             n1 = int(n1)
             n2 = int(n2)
-
             if opr == "+":
                 c = n1 + n2
             elif opr == "-":
