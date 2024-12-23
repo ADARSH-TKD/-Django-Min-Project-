@@ -2,5 +2,5 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('', views.calculator, name='calculator'),  # Route for the calculator page
+    path('', views.calculator2, name='calculator2'),  # Route for the calculator page
 ]
